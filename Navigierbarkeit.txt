@@ -1,0 +1,13 @@
+Was sind Außenweltverbindungen?
+Welche Räume sind erreichbar?
+Welche Level sind erreichbar?
+
+Achievments Gebäudesicht:
+Prozentuale erreichbarkeit der Räume
+Welche Level sind erreichbar insgesamt erreichbar?
+
+Achievments raumsicht:
+Ist das Stockwerk von diesem raum erreichabr?
+Ist dieser Raum mit einer Tür verbunden?
+Kann man von diesem Raum einen Eingang erreichen?
+

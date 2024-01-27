@@ -1,0 +1,51 @@
+multiBuildingAnalysis:
+
+analyzer = new SITAnalyzer;
+new Array navigationPercentages [{buildingid, achievement, achievmentPercentage}]
+new Array accessibilityPercentages [{buildingid, achievement, achievmentPercentage}]
+new Array navigationAchievements [{buildingID,[fulfilledAchievements]}]
+new Array accessibilityAchievements [{buildingID,[fulfilledAchievements]}]
+
+for  each building{
+    analyzer.analyze(building);
+
+    navigation = new NavControl(analyzer.correctSITTypeObjects[building.id]) ;
+    accessibility = new Accessibility(analyzer.correctSITTypeObjects[building.id]) ;
+
+    navigation.analyze();
+
+    navigationPercentages.push({building, achievment1, navigation.getAchievement1Percentage})
+    if(getAchievement1Percentage === 100){
+        navigationAchievements[building].fulfilledAchievements.push(achievement1);
+    }
+
+    navigationPercentages.push({building, achievment2, navigation.getAchievement2Percentage})
+        if(getAchievement2Percentage === 100){
+        navigationAchievements[building].fulfilledAchievements.push(achievement2);
+    }
+
+    .
+    .
+    .
+
+    accessibility.analyze();
+
+    accessibilityPercentages.push({building, achievment1, accessibility.getAchievement1percentage})
+    if(getAchievement1Percentage === 100){
+        accessibilityAchievements[buildingID].fulfilledAchievements.push(achievement1);
+    }
+
+    accessibilityPercentages.push({building, achievment2, accessibility.getAchievement2Percentage})
+        if(getAchievement2Percentage === 100){
+        accessibilityAchievements[buildingID].fulfilledAchievements.push(achievement2);
+    }
+
+    .
+    .
+    .
+
+    analyzer.deleteUselessStuff()
+}
+
+Use sitConf informations and the nav+acc-Percentage arrays to build percentage values which get displayed over map and to color multiBuildingAnalysis
+use nav+acc-Achievments arrays to know which icons get displayed per building

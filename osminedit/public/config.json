@@ -1,0 +1,14 @@
+{
+	"editor_name": "SIT-MapChecker",
+	"hash": "GIT_HASH",
+	"data_min_zoom": 16,
+	"map_initial_zoom": 18,
+	"map_initial_latlng": [48.13678, -1.69533],
+	"providers": {
+		"bing": "AhsSQakuHuX3ozMBXC60w-hPk0KD_smZZbHLjb7mBFfeIwDKJnJn2_qK3qQfYfPZ"
+	},
+	"osm_api_url": "http://141.76.16.34:8084",
+	"oauth_consumer_key": "XRLuIfux5d07RONMXob8j6ooR2yswrruD13soP9q",
+	"oauth_secret": "wAnGkzAvUpjSVEbMME4YIMCwryJsqTrmWP22hxxQ",
+	"always_authenticated": false
+}
